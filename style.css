@@ -8,13 +8,16 @@
 header {
     background-color: lightgrey;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 nav {
     /* border: 2px dotted black; */
-    /* width: 50%; */
+    width: inherit; 
     height: inherit;
     display: flex;
-    /* justify-content: start; */
+    justify-content: start;
     align-items: center;
 }
 nav > a {
@@ -22,6 +25,9 @@ nav > a {
     color: rgba(6, 5, 5, 0.501);
     font-size: 20px;
     padding: 0 30px;
+}
+nav > a:hover {
+    color: blueviolet;
 }
 .about_us {
     display: flex;
@@ -31,8 +37,10 @@ nav > a {
 width: 300px;
 height: 300px;
 object-fit: contain;
+margin-top: 40px;
 }
 .about_us-description {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -91,4 +99,17 @@ object-fit: contain;
     border: 3px solid black;
 }
 
+.posts_block {
+    width: 600px; 
+    margin: 20px auto;
+}
+.posts_block > h2 {
+    text-align: center;
+}
+.posts_block-container > * {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
 
